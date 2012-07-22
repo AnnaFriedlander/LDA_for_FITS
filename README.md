@@ -1,7 +1,7 @@
 LDA_for_FITS
 ============
 
-run latent Dirichlet allocation (using Gibbs sampling) on fitsfiles
+run latent Dirichlet allocation (using collapsed Gibbs sampling) on fitsfiles
 
 *******************************************************************************
                                                                              
