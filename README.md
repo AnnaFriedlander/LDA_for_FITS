@@ -4,13 +4,13 @@ LDA_for_FITS
 run latent Dirichlet allocation (using Gibbs sampling) on fitsfiles
 
 *******************************************************************************
-*                                                                             *
-* Run LDA on fits files                                                       *
-*                                                                             *
-* By Anna Friedlander & Dr Marcus Frean                                       *
-*                                                                             *
-* email: anna.fr@gmail.com                                                    *
-*                                                                             *
+                                                                             
+ Run LDA on fits files                                                       
+                                                                             
+ By Anna Friedlander & Dr Marcus Frean                                       
+                                                                             
+ email: anna.fr@gmail.com                                                    
+                                                                             
 *******************************************************************************
 
 First, process the fits file with readfits.py
@@ -51,7 +51,7 @@ Now you can run Gibbs sampling using Gibbs.java
 
     usage: java Gibbs inputfile #topics #iterations
 
-Gibbs sampling to infer topic allocations per word, per doc; from which topic
+Collapsed Gibbs sampling to infer topic allocations per word, per doc; from which topic
 proportions and word-topic distributions can be derived. Outputs CDWT, CDT, and
 CWT files every (#iterations/10)th iteration (file format as per CDW).
 FIXME: optimise alpha and beta vectors (instead of using heuristic values); 
