@@ -15,7 +15,7 @@ run latent Dirichlet allocation (using collapsed Gibbs sampling) on fitsfiles
 
 First, process the fits file with readfits.py
 
-    usage: python readfits.py fitsfile outstem
+    usage: python readfits.py fitsfile
 
 This converts the fitsfile image data to a space delimited .txt file with one 
 comment line at the top of the file: "# filename x-dim y-dim"
@@ -23,7 +23,7 @@ comment line at the top of the file: "# filename x-dim y-dim"
 
 Make the bin borders with fits-to-binborders.py
 
-    usage: python bin borders fitsfile.fits binning_strategy num_bins binborders_filename
+    usage: python fits-to-binborders.py fitsfile.fits binning_strategy num_bins binborders_filename
 
     possible strategies: occupancy, width, expwidth
 
